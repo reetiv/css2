@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .box1{
+                height:100px;
+                width: 100px;
+                border:2px ; 
+                background-color:blue;
+                margin:10px;
+                padding:10px;
+                display:inline-block;
+                justify-content: center;
+                animation-name: myanimation1;
+                animation-duration:3s ;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+        .box2{
+                height:100px;
+                width: 100px;
+                border:2px ; 
+                background-color:gray;
+                margin:10px;
+                padding:10px;
+                display:inline-block;
+                justify-content: center;
+                animation-name: myanimation2;
+                animation-duration:3s ;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+        }
+        .box3{
+                height:100px;
+                width: 100px;
+                border:2px ; 
+                background-color:blueviolet;
+                margin:10px;
+                padding:10px;
+                display:inline-block;
+                justify-content: center;
+                animation-name: myanimation3;
+                animation-duration:3s ;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+        }
+        .box4{
+                height:100px;
+                width: 100px;
+                border:2px ; 
+                background-color:gray;
+                margin:10px;
+                padding:10px;
+                display:inline-block;
+                justify-content: center;
+                animation-name: myanimation3;
+                animation-duration:3s ;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+        }
+        #my-box1{
+                position:relative;
+                animation-name: myanimation4;
+                animation-duration:3s ;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+        }
+        #my-box2{
+                animation-name: myanimation5;
+                animation-duration:3s ;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+        }
+        @keyframes myanimation4 {
+            0%{
+                top: 0px;
+            }
+            25%{
+                top:5px;
+            }
+            50%{
+                top:50px;
+            }
+            75%{
+                top: 5px;
+            }
+            100%{
+                top:0px;
+            }
+        }
+        @keyframes myanimation5 {
+            50%{
+                transform:scale(1);
+            }
+            75%{
+                transform: scale(-1);
+            }
+            100%{
+                transform: scale(-2);
+            }
+        }
+        @keyframes myanimation1{
+                 50%{
+                        transform: skewX(30deg);
+                    }
+                100%{
+                        transform: skewX(-30deg);
+                    }
+        }
+        @keyframes myanimation2{
+                 50%{
+                        transform: skewY(30deg);
+                    }
+                100%{
+                        transform: skewY(-30deg);
+                    }
+        }
+        @keyframes myanimation3 {
+               50%{
+               transform:rotate(360deg)
+               }
+               100%{
+                transform: rotate(-360deg);
+               }
+        }
+    </style>
+</head>
+<body style="background-color: rgba(255, 255, 0, 0.304);">
+    <h1><center>Try To replicate This!</center></h1>
+    <center>
+        <div>1.
+            <div class="box1"></div>
+            <div class="box1"></div>
+            <div class="box1"></div>
+        </div><br>
+        <div>2.
+            <div class="box2"></div>
+            <div class="box2"></div>
+            <div class="box2"></div>
+        </div><br>
+        <div>3.
+            <div class="box3"></div>
+            <div class="box3"></div>
+            <div class="box3"></div>  
+        </div><br>
+        <div>4.
+            <div class="box4" id="my-box1"></div>
+            <div class="box4" id="my-box2" style="background-color: brown;"></div>
+            <div class="box4" style="background-color: green;"></div>
+        </div><br>
+    <a href="./new.html"><span style="font-size: large;">Go To Another Animation!</span></a>
+    </center>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATION 2</title>
+    <style>
+        .box{
+            height:100px;
+            width: 100px;
+            border:2px ; 
+            background-color:lemonchiffon;
+            margin:10px;
+            padding:10px;
+            border-radius: 20px;
+            display:inline-block;
+            justify-content: center;
+        }
+        .box:hover{
+            animation-name: myanimation;
+            animation-duration:1s ;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        @keyframes myanimation {
+            from{
+                    width:100px;
+                    background-color:lemonchiffon;
+                }
+            to{
+                    width: 300px;
+                    background-color:yellow;
+                }
+            }
+    </style>
+</head>
+<body style="background-color: aquamarine;">
+    <center>
+    <div>1.
+        <div class="box"></div>
+    </div><br>
+    <div>2.
+        <div class="box"></div>
+    </div><br>
+    <div>3.
+        <div class="box"></div>
+    </div><br>
+    <div>4.
+        <div class="box"></div>
+    </div><br>
+    <a href="./index.html">GO BACK!</a>
+    </center>
+</body>
+</html>
